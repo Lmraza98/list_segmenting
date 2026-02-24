@@ -1,0 +1,37 @@
+{
+  "Executive": [
+    "CEO",
+    "CFO",
+    "COO",
+    "CTO",
+    "CIO",
+    "CMO",
+    "CHRO/People",
+    "CPO/Product",
+    "CAO",
+    "CLO/Legal",
+    "CSO/Strategy",
+    "CRO/Revenue/Sales Exec",
+    "CDO/Digital/Data",
+    "President",
+    "GM"
+  ],
+  "VP": [
+    "VP Sales",
+    "VP Marketing",
+    "VP Engineering",
+    "VP Operations",
+    "VP Finance",
+    "VP IT/CIO"
+  ],
+  "OwnerFounder": [
+    "Founder",
+    "Co-Founder",
+    "Owner",
+    "Co-Owner/Partner"
+  ],
+  "ProductOps": [
+    "Product Owner",
+    "Executive Assistant"
+  ]
+}

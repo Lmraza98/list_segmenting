@@ -1,0 +1,12 @@
+[
+  {"label":"Electrical/Electronic Manufacturing","pattern":"electrical/electronic manufacturing|electronic manufacturing|electronics manufacturing|electrical manufacturing"},
+  {"label":"Components & Semiconductors","pattern":"semiconductor|components|connector|resistor|sensor|pcb|printed circuit"},
+  {"label":"Distributors & Wholesalers","pattern":"wholesaler|wholesale|distributor|distribution|supplies"},
+  {"label":"Contractors & Field Services","pattern":"electrical contractors|electricians|contractor|field service|construction"},
+  {"label":"Test, Measurement & Compliance","pattern":"testing equipment|test equipment|metrology|calibration|compliance"},
+  {"label":"Power, Controls & Automation","pattern":"power supplies|power systems|control|automation|industrial controls"},
+  {"label":"Consumer Electronics","pattern":"consumer electronics"},
+  {"label":"Telecom & Connectivity","pattern":"telecommunications|wireless|connectivity|network"},
+  {"label":"Engineering, Design & R&D","pattern":"research|development|engineering services|design"},
+  {"label":"Repair & Maintenance Services","pattern":"repair|maintenance|service"}
+]

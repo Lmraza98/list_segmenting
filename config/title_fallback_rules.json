@@ -1,0 +1,23 @@
+[
+  {"label":"Co-Founder","pattern":"\\bco[- ]?founder\\b|\\bcofounder\\b"},
+  {"label":"Founder","pattern":"\\bfounder\\b"},
+  {"label":"Co-Owner/Partner","pattern":"\\bco[- ]?owner\\b|\\bpartner\\b"},
+  {"label":"Owner","pattern":"\\bowner\\b"},
+  {"label":"VP Sales","pattern":"\\b(sales|business development|demand creation)\\b"},
+  {"label":"VP Marketing","pattern":"\\b(marketing|brand|communications|content|creative|growth)\\b"},
+  {"label":"VP Engineering","pattern":"\\b(engineer|engineering)\\b"},
+  {"label":"VP Operations","pattern":"\\b(operations|supply chain|fulfillment|production|quality|procurement)\\b"},
+  {"label":"VP Finance","pattern":"\\b(finance|financial|treasurer|controller|accounting)\\b"},
+  {"label":"VP IT/CIO","pattern":"\\b(it|information|security|ciso|cio)\\b"},
+  {"label":"CLO/Legal","pattern":"\\b(legal|counsel|governance|compliance)\\b"},
+  {"label":"CHRO/People","pattern":"\\b(hr|human resources?|people|culture|diversity|engagement)\\b"},
+  {"label":"CPO/Product","pattern":"\\b(product|design)\\b"},
+  {"label":"CRO/Revenue/Sales Exec","pattern":"\\b(revenue|commercial|sales)\\b"},
+  {"label":"CMO","pattern":"\\b(marketing|growth|customer)\\b"},
+  {"label":"CTO","pattern":"\\b(technology|technical|cto)\\b"},
+  {"label":"CIO","pattern":"\\b(information|cio|ciso)\\b"},
+  {"label":"COO","pattern":"\\b(operating|operations)\\b"},
+  {"label":"CFO","pattern":"\\b(financial|finance|cfo)\\b"},
+  {"label":"CEO","pattern":"\\b(ceo|chief executive)\\b"},
+  {"label":"President","pattern":"\\b(president|chairman)\\b"}
+]
