@@ -166,7 +166,7 @@ def write_rows(path: Path, headers: List[str], rows: List[Dict[str, str]], delim
         writer = csv.DictWriter(
             f,
             fieldnames=headers,
-            delimiter=delimiter,
+            delimiter=",",
             lineterminator="\n",
             extrasaction="ignore",
         )

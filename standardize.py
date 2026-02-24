@@ -125,7 +125,8 @@ def detect_title_column(headers: List[str]) -> Optional[str]:
 def parse_variants(variants: str) -> List[str]:
     if not variants:
         return []
-    parts = re.split(r"[|;,]+", variants)
+    # Commas are valid inside titles/names, so only split on explicit list delimiters.
+    parts = re.split(r"[|;]+", variants)
     return [x.strip() for x in parts if x.strip()]
 
 
@@ -577,7 +578,7 @@ def standardize_titles(
         writer = csv.DictWriter(
             f,
             fieldnames=output_headers,
-            delimiter=leads_dialect.delimiter,
+            delimiter=",",
             lineterminator="\n",
             extrasaction="ignore",
         )

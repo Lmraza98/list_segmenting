@@ -1,6 +1,6 @@
-# Lead List Tool (Simple Guide)
+# Lead List Tool Guide
 
-This tool turns a raw lead CSV into clean, campaign-ready segment files.
+This tool turns a lead CSV into clean, campaign-ready segment files.
 
 You only need to do 2 things:
 1. Drop your CSV in `data/incoming/`
@@ -10,7 +10,7 @@ You only need to do 2 things:
 
 1. Put your new lead file(s) in:
    - `data/incoming/`
-2. Open PowerShell in this project folder.
+2. Open PowerShell / Command Prompt in this project folder.
 3. Run:
 
 ```powershell
@@ -50,10 +50,8 @@ For each file in `data/incoming/`, the tool:
   - `data/output/segmented/<input_file_name>/`
 - Archived source files:
   - `data/archive/`
-- Optional reference files:
-  - `samples/`
 
-## Definitions (Plain English)
+## Definitions
 
 - `Standardized Titles`:
   - The cleaned title bucket used for campaigns (example: `VP Engineering`).
@@ -123,11 +121,28 @@ To confirm all leads are accounted for:
 
 `total input leads = all segment files + holdout file`
 
-## Common Questions
+## What Happens First Pass
+
+On a brand-new list (or a new vertical), do a first pass, then manually tune mappings:
+
+1. Run `python process_batch.py` once.
+2. Review unmapped or questionable values in:
+   - `data/output/standardized/*_audit.csv` (titles)
+   - `data/output/standardized/*_industry_audit.csv` (industries)
+3. Update mapping/rules files based on what did not map well:
+   - `config/title_rules.json`
+   - `config/title_fallback_rules.json`
+   - `config/industry_rules.json`
+   - optionally state files in `data/state/` (`titles.csv`, `aliases.csv`, `industry_aliases.csv`) if you want explicit persistent overrides
+4. Re-run `python process_batch.py` on the same list and confirm audits improve.
+
+First pass finds gaps; second pass applies your mapping updates.
+
+## Questions
 
 ### Can I process multiple files at once?
 
-Yes. Put multiple CSVs in `data/incoming/` and run once.
+Yes multiple CSVs in `data/incoming/` and run once.
 
 ### Does it get smarter over time?
 
@@ -136,5 +151,4 @@ Yes. Mapping files in `data/state/` are reused each run.
 ### What if something looks wrong?
 
 1. Check `data/output/standardized/*_audit.csv`
-2. Share examples that look wrong
-3. Re-run after mapping updates
+2. Re-run after mapping updates

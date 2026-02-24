@@ -1,5 +1,6 @@
 __pycache__/
 *.pyc
+*.csv
 
 # Runtime pipeline data
 data/incoming/*
